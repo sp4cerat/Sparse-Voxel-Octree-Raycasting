@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{6f8fac40-4325-4561-aa61-b066f828773e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext">
+      <UniqueIdentifier>{373f9713-bf5f-4ee1-95ea-d623df52ea44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\ui">
+      <UniqueIdentifier>{b6d3bebb-ee25-4a43-940d-67289bfc8705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\gl">
+      <UniqueIdentifier>{933f5063-f62b-407d-a5fe-72e1f9ba12ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ext\error">
+      <UniqueIdentifier>{0dd02c97-3e9f-43d9-bd3d-9b5acc7eaa08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raycast">
+      <UniqueIdentifier>{4e887e51-ad41-47ee-b08a-f840420096c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="octree">
+      <UniqueIdentifier>{2c0a546c-871b-47f8-af6b-0aea432af447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{739d3225-47fc-4c55-b807-0abe38791f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{8658b44a-0512-4b46-a1b2-c6583d22691e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader\ssao">
+      <UniqueIdentifier>{a1f3888d-754e-4e69-b5bf-6a9d26049fd6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\nvwidgets\nvGlutWidgets.cpp">
+      <Filter>ext\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\nvwidgets\nvWidgets.cpp">
+      <Filter>ext\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\nvwidgets\nvGLWidgets.cpp">
+      <Filter>ext\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\glew.cpp">
+      <Filter>ext\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ext\stackwalker\StackWalker.cpp">
+      <Filter>ext\error</Filter>
+    </ClCompile>
+    <ClCompile Include="octree\Rle4.cpp">
+      <Filter>octree</Filter>
+    </ClCompile>
+    <ClCompile Include="Bmp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="octree\Tree.cpp">
+      <Filter>octree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="libs.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ocl.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ogl.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="error.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="file.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ext\stackwalker\StackWalker.h">
+      <Filter>ext\error</Filter>
+    </ClInclude>
+    <ClInclude Include="raycast.h">
+      <Filter>raycast</Filter>
+    </ClInclude>
+    <ClInclude Include="octree\Octree.h">
+      <Filter>octree</Filter>
+    </ClInclude>
+    <ClInclude Include="octree\Rle4.h">
+      <Filter>octree</Filter>
+    </ClInclude>
+    <ClInclude Include="Bmp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="bvh.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="octree\Tree.h">
+      <Filter>octree</Filter>
+    </ClInclude>
+    <ClInclude Include="core.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="win.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\kernel\kernel.cl">
+      <Filter>Kernel</Filter>
+    </None>
+    <None Include="..\shader\ssao\frag.txt">
+      <Filter>shader\ssao</Filter>
+    </None>
+    <None Include="..\shader\ssao\vs.txt">
+      <Filter>shader\ssao</Filter>
+    </None>
+  </ItemGroup>
+</Project>
