@@ -1,10 +1,6 @@
 # Sparse-Voxel-Octree-Raycasting
 Sparse Voxel Octree Raycasting with Image Warping exploiting Frame-to-Frame Coherence
 
-**Introduction:** 
-
-
-Since real-time raytracing is getting faster like with the Brigade Raytracer e.g., I believe this technology can be an important contribution to this area, as it might bring raytracing one step closer to being usable for video games.
 
 **Algorithm:**
 
@@ -18,10 +14,12 @@ Youtube Vid below (Raycasting 1920x1024@30-50fps)
 [![HVOX Engine](http://img.youtube.com/vi/ij0vw8yTCsY/0.jpg)](http://www.youtube.com/watch?v=ij0vw8yTCsY)
 
 
-Limitations: 
--------------
+**Limitations:**
+
+
 The method also comes with limitations of course. So the speed up depends on the motion in the scene obviously, and the method is only suitable for primary rays and pixel properties that remain constant over multiple frames, such as static ambient lighting. Further, during fast motions, the silhouettes of geometry close to the camera tends to loose precision and geometry in the background will not move as smooth as if the scene is fully raytraced each time. There, future work might include creating suitable image filters to avoid these effects.
 
-Results: 
--------------
+**Results:**
+
+
 Most of the pixels can be re-used using this technology. As only a fraction of the original needs to be raycasted, the speed up is significant and up to 5x the original speed, depending on the scene. 
