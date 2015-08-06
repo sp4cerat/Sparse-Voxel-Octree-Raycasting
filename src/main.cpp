@@ -4,9 +4,7 @@
 #include "math.h"
 #include "SDL/SDL.h"
 #include "SDL/SDL_opengl.h"
-//#include "SDL/SDL_audio.h"
 #include "SDL/SDL_opengl.h"
-//#include "SDL/SDL_mixer.h"
 #include "SDL/SDL_syswm.h"
 
 #include "win.h"
@@ -16,8 +14,8 @@
 #include "error.h"
 #include "file.h"
 
-float raycast_width  =1280;//1280;//1280;//1920;// 1280;//1920;//1280;///2;
-float raycast_height =720;//720;//720;//1024;// 720;// 1024;//768;///2;
+float raycast_width  =1536;//1280;//1280;//1920;// 1280;//1920;//1280;///2;
+float raycast_height =768;//720;//720;//1024;// 720;// 1024;//768;///2;
 
 float fps=1.0;
 float fpscl=1.0;
@@ -101,7 +99,7 @@ void sdl_init()
     SDL_EnableUNICODE( SDL_TRUE );
 		
     //Set caption
-    SDL_WM_SetCaption( "Voxel Master", NULL );
+    SDL_WM_SetCaption( "SVO Raycasting exploiting Frame to Frame Coherence", NULL );
 }
 
 void ui_init()
