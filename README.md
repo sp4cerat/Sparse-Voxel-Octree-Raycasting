@@ -8,7 +8,7 @@ The method then gathers empty 2x2 pixel blocks on the screen and stores them int
 
 Youtube Vid below (Raycasting 1920x1024@30-50fps)
 
-[![HVOX Engine](http://img.youtube.com/vi/ij0vw8yTCsY/0.jpg)](http://www.youtube.com/watch?v=ij0vw8yTCsY)
+[![HVOX Engine](https://github.com/sp4cerat/Sparse-Voxel-Octree-Raycasting/blob/master/screenshot.png?raw=true)](http://www.youtube.com/watch?v=ij0vw8yTCsY)
 
 
 **Limitations:**
