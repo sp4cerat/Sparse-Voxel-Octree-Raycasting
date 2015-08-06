@@ -22,4 +22,4 @@ The method also comes with limitations of course. So the speed up depends on the
 
 Results: 
 -------------
-Most of the pixels can be re-used using this technology. As only a fraction of the original needs to be raycasted, the speed up is significant and up to 5x the original speed, depending on the scene (see Fig.2 - Fig.4). Resolution for that test was 1024x768, the GPU was an NVIDIA GeForce GTX765M.
+Most of the pixels can be re-used using this technology. As only a fraction of the original needs to be raycasted, the speed up is significant and up to 5x the original speed, depending on the scene. 
