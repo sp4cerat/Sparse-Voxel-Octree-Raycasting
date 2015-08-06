@@ -1,7 +1,7 @@
 # Sparse-Voxel-Octree-Raycasting
 Sparse Voxel Octree Raycasting with Image Warping exploiting Frame-to-Frame Coherence
 
-Youtube Vid below
+Youtube Vid below (Raycasting 1920x1024@30-50fps)
 
 [![HVOX Engine](http://img.youtube.com/vi/ij0vw8yTCsY/0.jpg)](http://www.youtube.com/watch?v=ij0vw8yTCsY)
 
