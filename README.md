@@ -1,8 +1,5 @@
 # Sparse-Voxel-Octree-Raycasting
-Sparse Voxel Octree Raycasting with Image Warping exploiting Frame-to-Frame Coherence
-
-
-**Algorithm:**
+**Sparse Voxel Octree Raycasting with Image Warping exploiting Frame-to-Frame Coherence**
 
 
 The idea is to exploit temporal coherence between two consecutive rendered images to speed up ray-casting. The algorithm stores the x- y- and z-coordinate for each pixel in the scene in a coordinate-buffer and re-project it into the following screen using the differential view matrix. 
