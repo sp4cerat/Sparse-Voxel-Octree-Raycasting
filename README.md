@@ -12,7 +12,7 @@ Since real-time raytracing is getting faster like with the Brigade Raytracer e.g
 
 Algorithm: 
 -------------
-A technology I am working on since a while now is to exploit temporal coherence between two consecutive rendered images to speed up ray-casting. The idea is to store the x- y- and z-coordinate for each pixel in the scene in a coordinate-buffer and re-project it into the following screen using the differential view matrix. The resulting image will look as Fig.1.
+A technology I am working on since a while now is to exploit temporal coherence between two consecutive rendered images to speed up ray-casting. The idea is to store the x- y- and z-coordinate for each pixel in the scene in a coordinate-buffer and re-project it into the following screen using the differential view matrix. 
 
 The method then gathers empty 2x2 pixel blocks on the screen and stores them into an indexbuffer for raycasting the holes. Raycasting single pixels too inefficient. Small holes remaining after the hole-filling pass are closed by a simple image filter. To improve the overall quality, the method updates the screen in tiles (8x4) by raycasting an entire tile and overwriting the cache. Doing so, the entire cache is refreshed after 32 frames. Further, a triple buffer system is used. That means two image caches which are copied to alternately and one buffer that is written to. This is done since it often happens that a pixel is overwritten in one frame, but becomes visible already in the next frame. Therefore, before the hole filling starts, the two cache buffers are projected to the main image buffer.
 
