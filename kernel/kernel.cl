@@ -12,7 +12,7 @@ __kernel void memcpy(__global uint *dst, uint dstofs, __global uint *src, uint s
 #define OCTREE_DEPTH 11
 #define OCTREE_DEPTH_AND ((1<<OCTREE_DEPTH)-1)
 #define COARSE_SCALE 2
-#define VIEW_DIST_MAX 40000
+#define VIEW_DIST_MAX 400000
 #define LOD_ADJUST_COARSE 2
 #define LOD_ADJUST 1
 #define SCENE_LOOP 0
