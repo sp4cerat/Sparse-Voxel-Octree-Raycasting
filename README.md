@@ -20,3 +20,8 @@ The method also comes with limitations of course. So the speed up depends on the
 
 
 Most of the pixels can be re-used using this technology. As only a fraction of the original needs to be raycasted, the speed up is significant and up to 5x the original speed, depending on the scene. 
+
+
+Note : The speed might be further improved by adopting the branchless traversal shown here:
+
+https://www.shadertoy.com/view/4dX3zl
