@@ -170,7 +170,7 @@ do\
 \
 		/*hit*/\
 		if(rekursion<=lod)break;\
-\			
+\
 		/* step down the tree*/\
 		rekursion--;\
 \
@@ -652,7 +652,7 @@ __kernel    void raycast_holes(
 
 	// Params
 	//float3 delta    = dir;//a_origin.xyz + a_dx.xyz * convert_float(idx) + a_dy.xyz * convert_float(idy);
-	float3 raypos = a_m0.xyz*16.0;//+normalize(delta)*distance)*16.0;
+	float3 raypos = a_m0.xyz*16.0f;//+normalize(delta)*distance)*16.0f;
 
 	// --------- // Raycast > Begin
 	int sign_x, sign_y, sign_z,rekursion;
@@ -671,8 +671,8 @@ __kernel    void raycast_holes(
 							&local_root, 
 							rekursion,node_test  );
 		//col ^=0xffffff;
-		//rayLength=distance/16.0;
-		phit=raypos/16.0;
+		//rayLength=distance/16.0f;
+		phit=raypos/16.0f;
 	}				
 	int ofs=idy*res_x+idx;
 
@@ -768,7 +768,7 @@ __kernel    void raycast_fine(
 	float3 phit;
 
 	// Params
-	float3 raypos = a_m0.xyz*16.0;
+	float3 raypos = a_m0.xyz*16.0f;
 
 
 	// --------- // Raycast > Begin
@@ -789,7 +789,7 @@ __kernel    void raycast_fine(
 							rekursion,node_test  );
 		//col ^=0xffffff;
 		rayLength=distance;
-		phit=raypos/16.0;
+		phit=raypos/16.0f;
 	}				
 
 	//col=convert_int((raypos.x+raypos.y+raypos.z)/10)&0xfc;
@@ -896,7 +896,7 @@ __kernel    void raycast_fine_2(
 	float3 phit;
 
 	// Params
-	float3 raypos = a_m0.xyz*16.0;
+	float3 raypos = a_m0.xyz*16.0f;
 
 
 	// --------- // Raycast > Begin
@@ -917,7 +917,7 @@ __kernel    void raycast_fine_2(
 							rekursion,node_test  );
 		//col ^=0xffffff;
 		rayLength=distance;
-		phit=raypos/16.0;
+		phit=raypos/16.0f;
 	}				
 
 	//col=convert_int((raypos.x+raypos.y+raypos.z)/10)&0xfc;
